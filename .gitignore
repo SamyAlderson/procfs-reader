@@ -1,26 +1,33 @@
-# Ignore gitignore itself
-.gitignore
-
-# Ignore node_modules and yarn.lock
+# Ignore files
+*.pyc
+*.log
+*.tmp
+*.swp
+*.gitignore
+*.idea
+.vscode/
+__pycache__/
 node_modules/
-yarn.lock
+dist/
+build/
 
 # Ignore IDE files
 .idea/
 .vscode/
+.pydevproject
+
+# Ignore VCS files
+.git/
+.svn/
+.hg/
 
 # Ignore build artifacts
-dist/
+target/
+*.egg-info/
 build/
 
-# Ignore log files
-logs/
+# Ignore node modules
+node_modules/
 
-# Ignore docker files
-docker-compose.yml
-docker/
-
-# Ignore other stuff
-.env
-*.pyc
-*.log
+# Ignore Python cache
+__pycache__/
